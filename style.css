@@ -1,0 +1,125 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    color: rgb(168, 0, 132);
+}
+
+.ball {
+    margin: 2rem;
+}
+
+#ball {
+    position: absolute;
+    margin: 0 auto;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgba(240, 248, 255, 0);
+    border-radius: 50%;
+    border: none;
+    width: 20rem;
+    height: 20rem;
+    z-index: 11;
+    outline: none;
+}
+
+.black-part {
+    position: relative;
+    margin: 0 auto;
+    background-color: rgb(168, 0, 132);
+    border-radius: 50%;
+    width: 20rem;
+    height: 20rem;
+}
+
+#white-part {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(255, 153, 247);
+    border-radius: 50%;
+    width: 10rem;
+    height: 10rem;
+}
+
+#eight {
+    color: rgb(78, 0, 102);
+    font-size: 8.5rem;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 10;
+}
+
+#answer {
+    color: rgb(255, 153, 247);
+    font-size: 1rem;
+    text-align: center;
+    width: 60%;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.answers {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgb(104, 0, 81);
+    border-radius: 50%;
+    width: 10.1rem;
+    height: 10.1rem;
+    opacity: 0;
+}
+
+form {
+    margin: 0.5rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.question {
+    display: flex;
+    flex-direction: column;
+}
+
+#askSomething {
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    width: 100%;
+    margin: 1rem auto 0;
+    outline: none;
+}
+
+#res {
+    padding: 0.5rem 1rem;
+    border-radius: 0.5rem;
+    background-color: rgb(104, 0, 81);
+    color: rgb(255, 153, 247);
+    font-size: 0.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    width: 25%;
+    align-self: center;
+    outline: none;
+}
